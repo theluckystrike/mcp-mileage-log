@@ -43,6 +43,8 @@ Read-only mirror of [mcp-servers/servers/mileage-log](https://github.com/theluck
 
 <!-- mirror-seo:end -->
 
+[![theluckystrike/mcp-mileage-log MCP server](https://glama.ai/mcp/servers/theluckystrike/mcp-mileage-log/badges/score.svg)](https://glama.ai/mcp/servers/theluckystrike/mcp-mileage-log)
+
 **In the [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers/io.github.theluckystrike%2Fmileage-log/versions/latest)** (`io.github.theluckystrike/mileage-log`).
 An **mcp mileage** tracker that keeps the mileage log freelancers need at tax time, the moment the drive happens instead of reconstructed from memory in April. Log each trip with the date, from and to, the distance in miles or km, the purpose and the category (business, medical, moving, charitable, personal); set the rates that apply to you as an effective-dated series per jurisdiction and category; and the summary prices every trip at the rate in force on the day it was driven, per category and per currency. When the log is right, one call exports it as CSV to hand to your accountant. Everything stays on this machine; there is no account and no network call.
 
@@ -116,7 +118,7 @@ A 2025 trip then prices at 0.655 and a 2026 trip at 0.70, automatically. If your
 
 The monthly cap is counted on the month of the trip date, so reconstructing last year's log at tax time does not consume this month's allowance. The log itself is never metered: reading, listing and summarizing stay free for good.
 
-**Get Pro:** https://mcp.zovo.one/buy/mileage-log -- $19 one-time for this server, or $39 for the bundle.
+Get Pro: https://mcp.zovo.one/buy/mileage-log, $19 one-time for this server, or $39 for the bundle.
 
 ## Money and rounding
 
@@ -127,3 +129,9 @@ A trip's deductible amount is its distance times the effective rate, rounded **h
 All data stays local, in `${XDG_DATA_HOME:-~/.local/share}/mcp-servers/mileage-log/`. Three files: `trips.json`, `rates.json`, `counter.json`. Nothing is sent anywhere, there is no account, no API key and no network call in this server at all. License keys are verified offline. Nothing this server computes is tax advice; the rates you enter are your own figures to verify.
 
 Built by theluckystrike. https://github.com/theluckystrike
+
+## Use these docs as an MCP server
+
+Any MCP client (Claude, Cursor, Windsurf, VS Code) can read this repository's documentation directly via GitMCP — no install:
+
+- Docs MCP URL: https://gitmcp.io/theluckystrike/mcp-mileage-log
